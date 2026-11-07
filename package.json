@@ -1,0 +1,22 @@
+{
+  "name": "versteegentuinen",
+  "version": "2.0.0",
+  "private": true,
+  "description": "WordPress-thema Versteegen Tuinen",
+  "scripts": {
+    "build": "tailwindcss -i assets/css/input.css -o assets/css/style.css --minify",
+    "dev": "tailwindcss -i assets/css/input.css -o assets/css/style.css --watch",
+    "lint": "npm run lint:js && npm run lint:php",
+    "lint:js": "eslint .",
+    "lint:php": "find . -name '*.php' -not -path './node_modules/*' -print0 | xargs -0 -n1 php -l"
+  },
+  "author": "Kay Jilesen",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^9.39.2",
+    "globals": "^17.2.0",
+    "tailwindcss": "^3.4.0"
+  }
+}

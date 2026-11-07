@@ -1,0 +1,29 @@
+/* Header tweaks (2026-11). */
+
+.header-1 .header__bar {
+    padding: 14px 0;
+}
+
+.header-nav-menu .menu > li > a {
+    font-weight: 400;
+}
+
+.header-social .list-social__item a.ic-fb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #86c841;
+    color: #fff;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.header-social .list-social__item a.ic-fb:hover,
+.header-social .list-social__item a.ic-fb:focus-visible {
+    background-color: #6fa832;
+    color: #fff;
+}

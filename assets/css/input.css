@@ -1,0 +1,11 @@
+/*
+ * Theme CSS, loaded after the legacy stack (assets/legacy).
+ * No Tailwind base/preflight: the legacy CSS (normalize + Bootstrap 4) does the reset,
+ * and preflight would change the look of the existing site.
+ */
+@import './components/compat.css';
+@import './components/header.css';
+@import './components/footer.css';
+
+@tailwind components;
+@tailwind utilities;

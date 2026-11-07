@@ -1,0 +1,51 @@
+/* Compat: keep the look of markup that was cleaned up in the 2.0 rebuild. */
+
+/* Page and project titles are now h1 (were h2). normalize.css gives h1 2em and a margin. */
+.page-heading .title-2 {
+    margin: 0;
+}
+
+.project-style-1 h1.entry-title {
+    margin: 0;
+    font-size: 30px;
+}
+
+/* Service titles lost their empty href="#" link; same styling on the heading itself. */
+.media-service .media__title .title {
+    font-size: 18px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+/* Full-card link on the recent projects, under the title link. */
+.media-project__cover {
+    position: absolute;
+    inset: 0;
+    z-index: 50;
+}
+
+/* Phone and e-mail in the footer are links now; keep the text colour. */
+.footer .widget-address a {
+    color: inherit;
+}
+
+.footer .widget-address a:hover {
+    color: #86c841;
+}
+
+/* Content pages (cookiebeleid, privacyverklaring). */
+.page-content {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.page-content h2,
+.page-content h3 {
+    margin: 1.5em 0 0.5em;
+}
+
+.page-content p,
+.page-content ul,
+.page-content table {
+    margin-bottom: 1em;
+}
