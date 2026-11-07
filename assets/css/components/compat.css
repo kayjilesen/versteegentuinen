@@ -5,11 +5,6 @@
     margin: 0;
 }
 
-.project-style-1 h1.entry-title {
-    margin: 0;
-    font-size: 30px;
-}
-
 /* Service titles lost their empty href="#" link; same styling on the heading itself. */
 .media-service .media__title .title {
     font-size: 18px;
